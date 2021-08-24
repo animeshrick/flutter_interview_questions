@@ -13,41 +13,41 @@ This axis is called as the main axis.
 ## stf lifecycle -> createState,initState(),didChangeDependencies(),build(),
 didUpdateWidget(),setState(),deactivate(),dispose()
 
-createState(): When the Framework is instructed to build a StatefulWidget, it 
+- createState(): When the Framework is instructed to build a StatefulWidget, it 
 immediately calls createState()
 
-mounted is true: When createState creates your state class, a buildContext is 
+- mounted is true: When createState creates your state class, a buildContext is 
 assigned to that state. buildContext is, overly simplified, the place in the 
 widget tree in which this widget is placed. Here's a longer explanation. All 
 widgets have a bool this.mounted property. It is turned true when the buildContext 
 is assigned. It is an error to call setState when a widget is unmounted.
 
-initState(): This is the first method called when the widget is created (after the 
+- initState(): This is the first method called when the widget is created (after the 
 class constructor, of course.) initState is called once and only once. It must call 
 super.initState().
 
-didChangeDependencies(): This method is called immediately after initState on the 
+- didChangeDependencies(): This method is called immediately after initState on the 
 first time the widget is built.
 
-build(): This method is called often. It is required, and it must return a Widget.
+- build(): This method is called often. It is required, and it must return a Widget.
 
-didUpdateWidget(Widget oldWidget): If the parent widget changes and has to rebuild 
+- didUpdateWidget(Widget oldWidget): If the parent widget changes and has to rebuild 
 this widget (because it needs to give it different data), but it's being rebuilt with 
 the same runtimeType, then this method is called. This is because Flutter is re-using 
 the state, which is long lived. In this case, you may want to initialize some data again, 
 as you would in initState.
 
-setState(): This method is called often from the framework itself and from the developer. 
+- setState(): This method is called often from the framework itself and from the developer. 
 Its used to notify the framework that data has changed
 
-deactivate(): Deactivate is called when State is removed from the tree, but it might be 
+- deactivate(): Deactivate is called when State is removed from the tree, but it might be 
 reinserted before the current frame change is finished. This method exists basically because 
 State objects can be moved from one point in a tree to another.
 
-dispose(): dispose() is called when the State object is removed, which is permanent. 
+- dispose(): dispose() is called when the State object is removed, which is permanent. 
 This method is where you should unsubscribe and cancel all animations, streams, etc.
 
-mounted is false: The state object can never remount, and error will be thrown 
+- mounted is false: The state object can never remount, and error will be thrown 
 if setState is called.
 
 
@@ -55,7 +55,8 @@ if setState is called.
 manipulate the data of the class fields. Getter is used to read or get the data of 
 the class field whereas setter is used to set the data of the class field to some 
 variable.
-class Gfg {
+- #### Ex:
+- class Gfg {
 String geekName;
 String get get_geek_name{return geekName;}
 set set_geek_name (String name) {this.geekName = name;}
