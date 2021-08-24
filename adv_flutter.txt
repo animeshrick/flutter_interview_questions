@@ -1,9 +1,9 @@
-##What is tree shaking in Flutter?
+## What is tree shaking in Flutter?
 -> Tree shaking is an optimization technique to remove the unused module in 
 the bundle during the build process.It is a dead code elimination technique used 
 to optimize the code.
 
-##What is Flex box in Flutter?
+<h2>What is Flex box in Flutter?</h2>
 ->The Flex class in Flutter is used to display its children in a one-dimensional 
 array. With this widget, you can control theaxis where the children are placed. 
 This axis is called as the main axis.
