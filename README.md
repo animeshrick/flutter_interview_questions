@@ -10,7 +10,7 @@ to optimize the code.
 array. With this widget, you can control theaxis where the children are placed. 
 This axis is called as the main axis.
 
-##stf lifecycle -> createState,initState(),didChangeDependencies(),build(),
+## stf lifecycle -> createState,initState(),didChangeDependencies(),build(),
 didUpdateWidget(),setState(),deactivate(),dispose()
 
 createState(): When the Framework is instructed to build a StatefulWidget, it 
@@ -51,7 +51,7 @@ mounted is false: The state object can never remount, and error will be thrown
 if setState is called.
 
 
-##Getter and Setter Methods --->Getter and setter methods are the class methods used to 
+## Getter and Setter Methods --->Getter and setter methods are the class methods used to 
 manipulate the data of the class fields. Getter is used to read or get the data of 
 the class field whereas setter is used to set the data of the class field to some 
 variable.
@@ -69,17 +69,17 @@ geek.geek_name = "GeeksForGeeks";
 print("Welcome to ${geek.geek_name}");// op-Welcome to GeeksForGeeks
 }
 
-##BuildContext() --->Every Flutter widget has an @override build() method with the argument 
+## BuildContext() --->Every Flutter widget has an @override build() method with the argument 
 of BuildContext.Every Widget has its own build() and its context.The BuildContext is the 
 parent of the widget returned by the build() method.Helps to locate of the Widget 
 in the widget tree.
 
-##Dart static Keyword & Variable --->static [data_type] [variable_name];
+## Dart static Keyword & Variable --->static [data_type] [variable_name];
 The static keyword is used to declare the class variable and method.The static variable 
 or methods are the same for every instance of the class.It generally manages the memory 
 for the global data variable.
 
-##Instance Method in Dart:
+## Instance Method in Dart:
 Unless the method is declared as static it is classified as an instance method in a 
 class. They are allowed to access instance variables. 
 To call the method of this class you have to first create an object.
