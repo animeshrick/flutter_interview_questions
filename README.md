@@ -59,18 +59,18 @@ the class field whereas setter is used to set the data of the class field to som
 variable.
 #### Ex:
 - class Gfg {
-String geekName;
-String get get_geek_name{return geekName;}
-set set_geek_name (String name) {this.geekName = name;}
-//set set_geek_name (String name) {geekName = name;}
-}
+- String geekName;
+- String get get_geek_name{return geekName;}
+- set set_geek_name (String name) {this.geekName = name;}
+- //set set_geek_name (String name) {geekName = name;}
+- }
 
-void main()
-{
-Gfg geek = new Gfg();
-geek.geek_name = "GeeksForGeeks";
-print("Welcome to ${geek.geek_name}");// op-Welcome to GeeksForGeeks
-}
+- void main()
+- {
+- Gfg geek = new Gfg();
+- geek.geek_name = "GeeksForGeeks";
+- print("Welcome to ${geek.geek_name}");// op-Welcome to GeeksForGeeks
+- }
 
 ## BuildContext() 
 --->Every Flutter widget has an @override build() method with the argument 
