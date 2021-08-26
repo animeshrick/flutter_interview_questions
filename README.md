@@ -88,3 +88,25 @@ for the global data variable.
 Unless the method is declared as static it is classified as an instance method in a 
 class. They are allowed to access instance variables. 
 To call the method of this class you have to first create an object.
+
+## didchangedependancies():
+In Flutter, didChangeDependencies() is called only a few moments after the state loads its dependencies.
+With this method, we can use context outside of build().
+### want to use MediaQuery.of(context) outside of build():
+- @override
+- void didChangeDependencies() {
+-     // MediaQuery.of(context)
+-     super.didChangeDependencies();
+- }
+- Widget build(BuildContext context) {
+-    /* */
+- }
+
+## didUpdateWidget(Widget oldWidget):
+didUpdateWidget() is called if the parent widget changes and has to rebuild this widget (because it 
+needs to give it different data), but it's being rebuilt with the same runtimeType, then this method 
+is called.This is because Flutter is re-using the state, which is long lived.
+
+## deactivate():
+The framework calls this method whenever it removes this State object from the tree. dispose, which 
+is called after deactivate if the widget is removed from the tree permanently.
