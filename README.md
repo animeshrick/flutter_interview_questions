@@ -110,3 +110,18 @@ is called.This is because Flutter is re-using the state, which is long lived.
 ## deactivate():
 The framework calls this method whenever it removes this State object from the tree. dispose, which 
 is called after deactivate if the widget is removed from the tree permanently.
+
+## why we use CLASS
+A class is a user-defined data type. It consists of data members and member functions, which can be 
+accessed and used by creating an instance of that class. It represents the set of properties or 
+methods that are common to all objects of one type. A class is like a blueprint for an object.
+
+## Vsync used for
+vsync is the property that represents the TickerProvider.Tick is similar to clock's tick which 
+means that at every certain duration TickerProvider will render the class state and redraw the object.
+vsync can be used with the classes which require certain transition or animation to re-render to draw 
+different objects.To create an AnimationController in a class that uses this mixin, pass vsync: this to 
+the animation controller constructor whenever you create a new animation controller.
+
+## keys in flutter
+There are two types of keys in Flutter: GlobalKeys and LocalKeys
